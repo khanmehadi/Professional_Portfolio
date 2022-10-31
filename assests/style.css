@@ -1,0 +1,205 @@
+/* The body element is given a flex style */
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    background-image: url("clouds.jpg");
+    background-repeat: no-repeat;
+    justify-content:space-between;
+    align-items: center;
+    height: 0px;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 70px;
+    color:darkgray; 
+    padding: 5px;
+}
+
+nav a {
+    font-size: 20px;
+    color: cornflowerblue;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 0px 10px;
+    margin: 10px;
+    border-bottom: 3px solid rgb(118, 149, 206);
+}
+
+/* Causes the anchor elments to transition to a different color(blue) when cursor hovers over them */
+nav a:hover {
+    color: blue;
+    transition: .25s ease-in-out;
+}
+
+/* Causes the anchor elements to chnge colo when clicked on. */
+nav a:active {
+    color: cornflowerblue;
+    transition: .10s ease-in-out;
+}
+
+.subtitle {
+    display: flex; 
+    background-color: #0f9ff3;
+    justify-content: end; 
+    padding: 2%;
+    align-items: center;
+    
+}
+
+.subtitle h2 {
+    font-size: 50px;
+    background-color: rgb(233, 230, 227); 
+    color: cornflowerblue;
+    border-radius: 5px;
+    padding: 40px 150px; 
+    margin: 120px 0 0 0; 
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.about-me h2 {
+    color: cadetblue;
+    border-right: 3px solid cadetblue;
+    padding: 20px 25px 5px 30px;
+    margin-right: 50px;
+    font-size: 50px;
+    text-align: right;
+    margin-top: 100px ;
+}
+
+.about-me p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 1.5;
+    margin-top: 100px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.courses h2 {
+    color: cadetblue;
+    border-right: 3px solid cadetblue;
+    padding: 500px 25px 500px 50px;
+    margin-right: 80px; 
+    margin-left: 10px;
+    font-size: 50px;
+    text-align: right;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+
+.child {
+    border: 5px solid lightblue;
+    border-radius: 20px;
+    padding: 50px 100px;
+    margin: 10px 30px 10px 30px;
+    color: cadetblue;
+    font-size: xx-large;
+    width: 300px;
+}
+
+/* This style rule effects the div container with the "work" ID */
+#one {
+    order: 1;
+    padding: 5% 25% ;
+    background-image: url("snow.jpg");
+    font-size: 50px;
+    width: 500px;
+}
+
+/* This style targets all h3 elements located withing the "courses" class */
+h3 {
+    
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:  20px 20px 50px grey;;
+    width: 300px;
+    text-align: center;
+}
+
+#one h3 {
+
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow:  20px 20px 50px grey;;
+        width: 500px;
+        text-align: center;
+}
+
+/* Causes all elements border, with the child class, to chnge color when hovered over. */
+.child:hover {
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    transition: .35s ease-in-out;
+
+}
+
+/* Causes the elements border, with the "one" ID, to chnge color when hovered over. */
+#one:hover {
+    background-image: url("clouds.jpg");
+    border-color: white;
+    transition: .35s ease-in-out;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.contact h2 {
+    color: cadetblue;
+    border-bottom: 3px solid cadetblue;
+    padding: 5px 400px 0px 400px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.my-contact {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+
+.my-contact li {
+    display: inline;
+    font-size: x-large;
+    padding: 10px 20px 10px 20px;
+    border-right: 2px solid grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Causes the elements borders within the child class to change color to red when display width is less then 1200px. */
+@media screen and (max-width: 1200px){
+    .child {
+        border-color: red;
+        color: red;
+    }
+}
